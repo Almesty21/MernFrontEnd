@@ -4,7 +4,7 @@ export const getAllBases = () => async (dispatch) => {
 	dispatch({ type: 'GET_BASES_REQUEST' });
 
 	const response = await axios.get(
-		'https://pizza-app-backend12.herokuapp.com/api/myopizza/getallbases',
+		'https://pizzadelivary.onrender.com/api/myopizza/getallbases',
 	);
 	// console.log(response);
 	dispatch({ type: 'GET_BASES_SUCCESS', payload: response.data });
@@ -14,7 +14,7 @@ export const getAllSauces = () => async (dispatch) => {
 	dispatch({ type: 'GET_SAUCES_REQUEST' });
 
 	const response = await axios.get(
-		'https://pizzadelivary.onrender.com//api/myopizza/getallsauces',
+		'https://pizzadelivary.onrender.com/api/myopizza/getallsauces',
 	);
 	// console.log(response);
 	dispatch({ type: 'GET_SAUCES_SUCCESS', payload: response.data });
