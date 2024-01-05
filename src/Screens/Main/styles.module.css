@@ -1,0 +1,22 @@
+.heading1 {
+	font-family: 'Lobster', cursive;
+}
+/* Default styles for larger devices */
+.responsive-image {
+  display: block; /* Use block display for default styles */
+  width: 100%;
+  height: auto;
+}
+
+/* Media query for devices with a max-width of 767px (small devices) */
+@media (max-width: 767px) {
+  .responsive-image {
+    /* Additional styles for small devices */
+    display: flex; /* Use flex display for small devices */
+    flex-direction: column;
+    width: 100%; /* Set width to 100% for responsiveness */
+    height: auto; /* Allow height to adjust proportionally */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+}
+
